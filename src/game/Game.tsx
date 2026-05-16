@@ -1,5 +1,5 @@
 import { Canvas } from "@react-three/fiber";
-import { Suspense } from "react";
+import { Suspense, useEffect, useState } from "react";
 import { Scene } from "./Scene";
 import { HUD } from "./HUD";
 import { Menu } from "./Menu";
@@ -9,6 +9,15 @@ import { useControls } from "./useControls";
 
 export function Game() {
   useControls();
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
+  if (!mounted) {
+    return (
+      <div className="fixed inset-0 bg-background flex items-center justify-center">
+        <p className="font-script text-gold text-2xl animate-pulse">loading our story…</p>
+      </div>
+    );
+  }
   return (
     <div className="fixed inset-0 bg-background">
       <Canvas
