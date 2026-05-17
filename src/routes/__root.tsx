@@ -73,21 +73,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "1st anniversary" },
-      { name: "description", content: "Happy anniversary my love
-
-Today I just want to thank you for being part of my life. Every day with you feels special to me. You are not only my wife," },
+      { name: "description", content: "Happy anniversary my love. Today I just want to thank you for being part of my life. Every day with you feels special to me." },
       { name: "author", content: "Lovable" },
       { property: "og:title", content: "1st anniversary" },
-      { property: "og:description", content: "Happy anniversary my love
-
-Today I just want to thank you for being part of my life. Every day with you feels special to me. You are not only my wife," },
+      { property: "og:description", content: "Happy anniversary my love. Today I just want to thank you for being part of my life. Every day with you feels special to me." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
       { name: "twitter:title", content: "1st anniversary" },
-      { name: "twitter:description", content: "Happy anniversary my love
-
-Today I just want to thank you for being part of my life. Every day with you feels special to me. You are not only my wife," },
+      { name: "twitter:description", content: "Happy anniversary my love. Today I just want to thank you for being part of my life. Every day with you feels special to me." },
       { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/qS3H7KQJn8WXyqcdtUzWJdMWeBw1/social-images/social-1778960104487-WhatsApp_Image_2026-05-17_at_12.17.16_AM.webp" },
       { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/qS3H7KQJn8WXyqcdtUzWJdMWeBw1/social-images/social-1778960104487-WhatsApp_Image_2026-05-17_at_12.17.16_AM.webp" },
     ],
